@@ -35,6 +35,7 @@ Finally, we are ready to run our docker container (replacing `<YOUR-LOCAL-IP-HER
 
 ```bash
 docker-compose run --rm dev
+export _JAVA_OPTIONS='-Dsun.java2d.xrender=false'
 export DISPLAY=<YOUR-LOCAL-IP-HERE>:0
 bash nand2tetris/tools/HardwareSimulator.sh
 ```
